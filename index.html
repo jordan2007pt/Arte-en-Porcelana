@@ -3,88 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería - Arte en Porcelana</title>
+    <title>Arte en Porcelana</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        #galeria.oculto {
-            display: none;
-        }
-        #carrusel-container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            position: relative;
-        }
-        #carrusel {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-        .carrusel-item {
-            min-width: 100%;
-            box-sizing: border-box;
-        }
-        button {
-            margin: 5px;
-            padding: 10px;
-            border: none;
-            background: #007BFF;
-            color: white;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #0056b3;
-        }
-    </style>
 </head>
 <body>
     <header>
         <h1>Arte en Porcelana</h1>
-        <button id="btnGaleria">Galería</button>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
     
-    <section id="galeria" class="oculto">
-        <h2>Nuestra Galería</h2>
-        <nav>
-            <button class="categoria" data-categoria="esculturas">Esculturas</button>
-            <button class="categoria" data-categoria="decoraciones">Decoraciones</button>
-            <button class="categoria" data-categoria="collares">Collares</button>
-            <button class="categoria" data-categoria="llaveros">Llaveros</button>
-            <button class="categoria" data-categoria="curiosidades">Curiosidades</button>
-            <button class="categoria" data-categoria="joyeros">Joyeros</button>
-        </nav>
-        <div id="carrusel-container">
-            <div id="carrusel">
-                <img class="carrusel-item" src="imagen1.jpg" alt="Imagen 1">
-                <img class="carrusel-item" src="imagen2.jpg" alt="Imagen 2">
-                <img class="carrusel-item" src="imagen3.jpg" alt="Imagen 3">
-            </div>
-        </div>
-        <button id="prev">⬅</button>
-        <button id="next">➡</button>
+    <section id="inicio">
+        <h2>Creaciones Únicas en Cerámica Fría</h2>
+        <p>Dale Vida a Tus Espacios con Arte Hecho a Mano</p>
     </section>
-    <script>
-        document.getElementById("btnGaleria").addEventListener("click", function() {
-            document.getElementById("galeria").classList.toggle("oculto");
-        });
+    
+    <section id="sobre-nosotros">
+        <h2>Pasión por el Arte, Amor por los Detalles</h2>
+        <p>Cada Pieza Cuenta una Historia</p>
+    </section>
+    
+    <section id="galeria">
+        <h2>Explora Nuestra Colección de Artesanías</h2>
+        <p>Desde lo Clásico hasta lo Moderno, Todo en Cerámica Fría</p>
         
-        let index = 0;
-        const items = document.querySelectorAll(".carrusel-item");
-        const total = items.length;
-
-        document.getElementById("next").addEventListener("click", function() {
-            index = (index + 1) % total;
-            document.getElementById("carrusel").style.transform = `translateX(-${index * 100}%)`;
-        });
+        <div class="categoria">
+            <h3>Esculturas</h3>
+            <p>Figuras con Alma y Estilo</p>
+        </div>
         
-        document.getElementById("prev").addEventListener("click", function() {
-            index = (index - 1 + total) % total;
-            document.getElementById("carrusel").style.transform = `translateX(-${index * 100}%)`;
-        });
-    </script>
+        <div class="categoria">
+            <h3>Decoraciones</h3>
+            <p>Detalles que Transforman Tu Hogar</p>
+        </div>
+        
+        <div class="categoria">
+            <h3>Collares</h3>
+            <p>Elegancia Artesanal para Tu Día a Día</p>
+        </div>
+        
+        <div class="categoria">
+            <h3>Llaveros</h3>
+            <p>Pequeños Tesoros para Llevar Contigo</p>
+        </div>
+        
+        <div class="categoria">
+            <h3>Curiosidades</h3>
+            <p>Creaciones que Sorprenden y Encantan</p>
+        </div>
+        
+        <div class="categoria">
+            <h3>Joyeros</h3>
+            <p>Guarda Tu Brillo en una Pieza Única</p>
+        </div>
+    </section>
+    
+    <section id="tienda">
+        <h2>Encuentra la Pieza Perfecta para Ti o un Ser Querido</h2>
+        <p>Regalos con Historia, Hechos a Mano con Amor</p>
+    </section>
+    
+    <section id="contacto">
+        <h2>¿Tienes una Idea? ¡Hagámosla Realidad!</h2>
+        <p>Contáctanos y Lleva el Arte a Tu Hogar</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Arte en Porcelana - Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
+
