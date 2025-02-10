@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll(".galeria button");
+    const buttons = document.querySelectorAll(".categoria");
     const seen = new Set();
 
     buttons.forEach(button => {
         if (seen.has(button.textContent)) {
-            button.remove();
+            button.remove(); // Elimina los duplicados
         } else {
             seen.add(button.textContent);
         }
     });
 });
+
