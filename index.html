@@ -1,55 +1,3 @@
-ECHO est� activado.
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arte en Porcelana</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Bienvenido a Arte en Porcelana</h1>
-        <p>Descubre creaciones �nicas hechas a mano</p>
-    </header>
-
-    <section>
-        <h2>Nuestros Productos</h2>
-        <p>Aqu� puedes agregar informaci�n sobre los productos en porcelana fr�a.</p>
-    </section>
-
-
-    <footer>
-        <p>&copy; 2025 Arte en Porcelana - Todos los derechos reservados</p>
-    </footer>
-</body>
-</html>
-<meta charset="UTF-8">
-<head>
-    <meta charset="UTF-8">
-    <title>Arte en Porcelana</title>
-</head>
-document.addEventListener("DOMContentLoaded", function () {
-    const button = document.createElement("button");
-    button.textContent = "Cambiar Fondo";
-    button.style.padding = "10px 20px";
-    button.style.margin = "10px";
-    button.style.border = "none";
-    button.style.backgroundColor = "#A0522D";
-    button.style.color = "white";
-    button.style.cursor = "pointer";
-    button.style.fontSize = "16px";
-    document.body.appendChild(button);
-
-    const colors = ["#F5F5DC", "#E2725B", "#A0522D", "#CC7722", "#5A3E36"];
-    
-    button.addEventListener("click", function () {
-        const randomColor = colors[Math.floor(Math.random() * colors.length)];
-        document.body.style.backgroundColor = randomColor;
-    });
-});
-<script src="script.js"></script>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -66,22 +14,24 @@ document.addEventListener("DOMContentLoaded", function () {
     </header>
 
     <section class="productos">
+        <h2>Nuestros Productos</h2>
+        <p>Aquí puedes agregar información sobre los productos en porcelana fría.</p>
+        
         <div class="producto">
-            <h2>Florero de Porcelana</h2>
+            <h3>Florero de Porcelana</h3>
             <p>Hermoso florero hecho a mano</p>
         </div>
         <div class="producto">
-            <h2>Escultura de Ángel</h2>
+            <h3>Escultura de Ángel</h3>
             <p>Escultura detallada en porcelana</p>
         </div>
     </section>
 
     <footer>
-        © 2025 Arte en Porcelana - Todos los derechos reservados
+        <p>&copy; 2025 Arte en Porcelana - Todos los derechos reservados</p>
     </footer>
 
     <script src="script.js"></script>
 
 </body>
 </html>
-
