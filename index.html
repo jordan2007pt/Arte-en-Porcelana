@@ -1,136 +1,80 @@
-<section class="galeria">
-    <h2>Galería</h2>
-    <div class="categorias">
-        <div class="categoria">
-            <h3>Esculturas</h3>
-            <img src="images/escultura1.jpg" alt="Escultura de porcelana">
-        </div>
-        <div class="categoria">
-            <h3>Decoraciones</h3>
-            <img src="images/decoracion1.jpg" alt="Decoración en porcelana">
-        </div>
-        <div class="categoria">
-            <h3>Collares</h3>
-            <img src="images/collar1.jpg" alt="Collar de porcelana">
-        </div>
-        <div class="categoria">
-            <h3>Llaveros</h3>
-            <img src="images/llavero1.jpg" alt="Llavero de porcelana">
-        </div>
-        <div class="categoria">
-            <h3>Curiosidades</h3>
-            <img src="images/curiosidad1.jpg" alt="Curiosidad en porcelana">
-        </div>
-    </div>
-</section>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arte en Porcelana</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FAF8E6;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #8B4513;
+            color: white;
+            padding: 15px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .subheader {
+            background-color: #A0522D;
+            color: white;
+            padding: 10px 0;
+            font-size: 18px;
+        }
+        .gallery {
+            margin: 20px auto;
+        }
+        .gallery h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .button {
+            background-color: #E57373;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            color: white;
+        }
+        footer {
+            background-color: #5D4037;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-
-    <header>
-        <h1>Bienvenido a Arte en Porcelana</h1>
-        <p>Descubre creaciones únicas hechas a mano</p>
-    </header>
-
-    <section class="productos">
-        <div class="producto">
-            <h2>Florero de Porcelana</h2>
-            <p>Hermoso florero hecho a mano</p>
-        </div>
-        <div class="producto">
-            <h2>Escultura de Ángel</h2>
-            <p>Escultura detallada en porcelana</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Arte en Porcelana - Todos los derechos reservados</p>
-    </footer>
-
-    <script src="script.js"></script>
-
-</body>
-</html>
-<header>
-    Arte en Porcelana
-</header>
-<div class="gallery-item">Joyeros</div>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arte en Porcelana</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace al CSS -->
-</head>
-<body>
-
-    <!-- Encabezado -->
-    <header>
-        Arte en Porcelana
-    </header>
-
-    <div class="container">
-        <!-- Galería -->
+    <header>Arte en Porcelana</header>
+    <div class="subheader">Descubre creaciones únicas hechas a mano</div>
+    
+    <div class="gallery">
         <h2>Galería</h2>
-        <div class="gallery">
-            <div class="gallery-item">Esculturas</div>
-            <div class="gallery-item">Decoraciones</div>
-            <div class="gallery-item">Collares</div>
-            <div class="gallery-item">Llaveros</div>
-            <div class="gallery-item">Curiosidades</div>
-            <div class="gallery-item">Joyeros</div> <!-- 🔹 Nuevo elemento agregado -->
+        <div class="buttons-container">
+            <button class="button">Esculturas</button>
+            <button class="button">Decoraciones</button>
+            <button class="button">Collares</button>
+            <button class="button">Llaveros</button>
+            <button class="button">Curiosidades</button>
+            <button class="button">Joyeros</button>
         </div>
     </div>
-
+    
+    <footer>
+        &copy; 2025 Arte en Porcelana - Todos los derechos reservados
+    </footer>
 </body>
 </html>
-<div class="gallery">
-    <div class="gallery-item">Esculturas</div>
-    <div class="gallery-item">Decoraciones</div>
-    <div class="gallery-item">Collares</div>
-    <div class="gallery-item">Llaveros</div>
-    <div class="gallery-item">Curiosidades</div>
-    <div class="gallery-item">Joyeros</div> <!-- 🔹 Agregado aquí -->
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#catalogo">Catálogo de Productos</a></li>
-            <li><a href="#personalizacion">Personalización y Pedidos</a></li>
-            <li><a href="#redes">Redes y Contacto</a></li>
-            <li><a href="#blog">Blog y Consejos</a></li>
-            <li><a href="#envios">Envíos y Métodos de Pago</a></li>
-        </ul>
-    </nav>
-    <section id="catalogo">
-        <h2>Catálogo de Productos</h2>
-        <p>Fotos de alta calidad – Muestra cada pieza desde diferentes ángulos.</p>
-        <p>Descripciones detalladas – Explica el tamaño, materiales y posibles personalizaciones.</p>
-    </section>
-    
-    <section id="personalizacion">
-        <h2>Personalización y Pedidos</h2>
-        <p>Formulario de pedidos personalizados – Para que los clientes puedan solicitar piezas únicas.</p>
-    </section>
-    
-    <section id="redes">
-        <h2>Redes y Contacto</h2>
-        <p><a href="https://wa.me/989474874">📱 WhatsApp</a></p>
-    </section>
-    
-    <section id="blog">
-        <h2>Blog y Consejos</h2>
-        <p>Pronto habrán tutoriales sobre cómo hacer artesanías en cerámica fría.</p>
-    </section>
-    
-    <section id="envios">
-        <h2>Envíos y Métodos de Pago</h2>
-        <p>Envíos en Lima con diferentes tarifas.</p>
-    </section>
+
     
