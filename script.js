@@ -1,9 +1,12 @@
-// Agregar efecto de desplazamiento suave
-document.querySelectorAll('nav ul li a').forEach(enlace => {
-    enlace.addEventListener('click', function(e) {
-        e.preventDefault();
-        const seccion = document.querySelector(this.getAttribute('href'));
-        seccion.scrollIntoView({ behavior: 'smooth' });
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".galeria button");
+    const seen = new Set();
+
+    buttons.forEach(button => {
+        if (seen.has(button.textContent)) {
+            button.remove();
+        } else {
+            seen.add(button.textContent);
+        }
     });
 });
-console.log("Arte en Porcelana cargado correctamente.");

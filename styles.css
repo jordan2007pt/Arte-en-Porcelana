@@ -1,44 +1,31 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #fdf6e3;
-    color: #333;
+    background-color: #fdfbe6;
     text-align: center;
-    margin: 0;
-    padding: 0;
 }
 
-.header {
+header {
     background-color: #8B4513;
     color: white;
     padding: 20px;
 }
 
-.productos {
+h1 {
+    font-size: 24px;
+}
+
+.destacados {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 20px;
+    margin-top: 20px;
 }
 
-.producto {
+.item {
     background-color: #e57373;
+    color: white;
     padding: 15px;
     border-radius: 10px;
-    color: white;
-}
-
-.galeria {
-    padding: 20px;
-}
-
-.categorias button {
-    background-color: #e57373;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 footer {
@@ -48,3 +35,16 @@ footer {
     margin-top: 20px;
 }
 
+.galeria {
+    margin-top: 20px;
+}
+
+.galeria button {
+    background-color: #e57373;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
