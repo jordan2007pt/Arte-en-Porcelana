@@ -3,43 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arte en Porcelana</title>
+    <title>Galería - Arte en Porcelana</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #galeria.oculto {
+            display: none;
+        }
+        #carrusel-container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+        }
+        #carrusel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carrusel-item {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            margin: 5px;
+            padding: 10px;
+            border: none;
+            background: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenido a Arte en Porcelana</h1>
-        <p>Descubre creaciones únicas hechas a mano</p>
+        <h1>Arte en Porcelana</h1>
+        <button id="btnGaleria">Galería</button>
     </header>
-
-    <main>
-        <section class="destacados">
-            <div class="item">
-                <h2>Florero de Porcelana</h2>
-                <p>Hermoso florero hecho a mano</p>
+    
+    <section id="galeria" class="oculto">
+        <h2>Nuestra Galería</h2>
+        <nav>
+            <button class="categoria" data-categoria="esculturas">Esculturas</button>
+            <button class="categoria" data-categoria="decoraciones">Decoraciones</button>
+            <button class="categoria" data-categoria="collares">Collares</button>
+            <button class="categoria" data-categoria="llaveros">Llaveros</button>
+            <button class="categoria" data-categoria="curiosidades">Curiosidades</button>
+            <button class="categoria" data-categoria="joyeros">Joyeros</button>
+        </nav>
+        <div id="carrusel-container">
+            <div id="carrusel">
+                <img class="carrusel-item" src="imagen1.jpg" alt="Imagen 1">
+                <img class="carrusel-item" src="imagen2.jpg" alt="Imagen 2">
+                <img class="carrusel-item" src="imagen3.jpg" alt="Imagen 3">
             </div>
-            <div class="item">
-                <h2>Joyeros personalizados en porcelana  </h2>
-                <p>Escultura detallada en porcelana</p>
-            </div>
-        </section>
-
-        <h2>Galería</h2>
-        <div class="galeria">
-            <button class="categoria">Esculturas</button>
-            <button class="categoria">Decoraciones</button>
-            <button class="categoria">Collares</button>
-            <button class="categoria">Llaveros</button>
-            <button class="categoria">Joyeros</button>
-            <button class="categoria">Curiosidades</button>
         </div>
-    </main>
+        <button id="prev">⬅</button>
+        <button id="next">➡</button>
+    </section>
+    <script>
+        document.getElementById("btnGaleria").addEventListener("click", function() {
+            document.getElementById("galeria").classList.toggle("oculto");
+        });
+        
+        let index = 0;
+        const items = document.querySelectorAll(".carrusel-item");
+        const total = items.length;
 
-    <footer>
-        <p>© 2025 Arte en Porcelana - Todos los derechos reservados</p>
-    </footer>
-
-    <script src="script.js"></script>
+        document.getElementById("next").addEventListener("click", function() {
+            index = (index + 1) % total;
+            document.getElementById("carrusel").style.transform = `translateX(-${index * 100}%)`;
+        });
+        
+        document.getElementById("prev").addEventListener("click", function() {
+            index = (index - 1 + total) % total;
+            document.getElementById("carrusel").style.transform = `translateX(-${index * 100}%)`;
+        });
+    </script>
 </body>
 </html>
-
