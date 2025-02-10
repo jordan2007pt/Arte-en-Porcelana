@@ -8,30 +8,64 @@
 </head>
 <body>
 
-    <header>
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#tienda">Tienda</a></li>
+            <li><a href="#nosotros">Sobre Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <header id="inicio">
         <h1>Bienvenido a Arte en Porcelana</h1>
         <p>Descubre creaciones únicas hechas a mano</p>
     </header>
 
-    <section class="productos">
-        <h2>Nuestros Productos</h2>
-        <p>Aquí puedes agregar información sobre los productos en porcelana fría.</p>
-        
-        <div class="producto">
-            <h3>Florero de Porcelana</h3>
-            <p>Hermoso florero hecho a mano</p>
-        </div>
-        <div class="producto">
-            <h3>Escultura de Ángel</h3>
-            <p>Escultura detallada en porcelana</p>
+    <!-- Sección Galería -->
+    <section id="galeria">
+        <h2>Galería</h2>
+        <p>Explora nuestra colección de creaciones en porcelana.</p>
+        <div class="imagenes">
+            <img src="img1.jpg" alt="Escultura en porcelana">
+            <img src="img2.jpg" alt="Jarrón decorado">
+            <img src="img3.jpg" alt="Figura artesanal">
         </div>
     </section>
 
+    <!-- Sección Tienda -->
+    <section id="tienda">
+        <h2>Tienda</h2>
+        <p>Compra nuestras piezas exclusivas.</p>
+        <button>Ver Productos</button>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Conoce nuestra historia y pasión por la porcelana.</p>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Ponte en contacto con nosotros para pedidos personalizados.</p>
+        <form>
+            <input type="text" placeholder="Tu Nombre" required>
+            <input type="email" placeholder="Tu Correo" required>
+            <textarea placeholder="Tu Mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
     <footer>
         <p>&copy; 2025 Arte en Porcelana - Todos los derechos reservados</p>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
