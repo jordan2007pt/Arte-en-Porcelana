@@ -1,7 +1,62 @@
-ECHO esta activado.
 body {
     background-color: #F5F5DC; /* Beige */
     color: #5A3E36; /* Marrón oscuro */
     font-family: Arial, sans-serif;
 }
 <script src="script.js"></script>
+/* Estilos generales */
+body {
+    background-color: #F5F5DC; /* Beige */
+    color: #5A3E36; /* Marrón oscuro */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background-color: #A0522D; /* Marrón arcilla */
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* Sección de productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.producto {
+    background-color: #E2725B; /* Terracota */
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+/* Botón interactivo */
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #A0522D;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: #CC7722;
+}
+
+/* Pie de página */
+footer {
+    background-color: #5A3E36;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -18,3 +18,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }); 
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.createElement("button");
+    button.textContent = "Cambiar Fondo";
+    document.body.appendChild(button);
+
+    // Estilos del botón
+    button.style.padding = "10px 20px";
+    button.style.border = "none";
+    button.style.backgroundColor = "#A0522D";
+    button.style.color = "white";
+    button.style.cursor = "pointer";
+    button.style.fontSize = "16px";
+    button.style.marginTop = "10px";
+
+    // Colores disponibles
+    const colors = ["#F5F5DC", "#E2725B", "#A0522D", "#CC7722", "#5A3E36"];
+
+    button.addEventListener("click", function () {
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        document.body.style.backgroundColor = randomColor;
+    });
+});
