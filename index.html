@@ -6,11 +6,53 @@
     <title>Arte en Porcelana</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #8B4513;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .navbar li {
+            display: inline;
+            margin: 0 15px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #FFD700;
+        }
+        section {
+            padding: 100px 20px;
+            min-height: 100vh;
+            text-align: center;
+        }
+        #inicio { background: #FFF8DC; }
+        #sobre-nosotros { background: #FAEBD7; }
+        #galeria { background: #FFE4C4; }
+        #tienda { background: #DEB887; }
+        #contacto { background: #D2B48C; }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Arte en Porcelana</h1>
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
@@ -22,7 +64,7 @@
     </header>
     
     <section id="inicio">
-        <h2>Creaciones Únicas en Cerámica Fría</h2>
+        <h1>Creaciones Únicas en Cerámica Fría</h1>
         <p>Dale Vida a Tus Espacios con Arte Hecho a Mano</p>
     </section>
     
@@ -33,52 +75,27 @@
     
     <section id="galeria">
         <h2>Explora Nuestra Colección de Artesanías</h2>
-        <p>Desde lo Clásico hasta lo Moderno, Todo en Cerámica Fría</p>
-        
-        <div class="categoria">
-            <h3>Esculturas</h3>
-            <p>Figuras con Alma y Estilo</p>
-        </div>
-        
-        <div class="categoria">
-            <h3>Decoraciones</h3>
-            <p>Detalles que Transforman Tu Hogar</p>
-        </div>
-        
-        <div class="categoria">
-            <h3>Collares</h3>
-            <p>Elegancia Artesanal para Tu Día a Día</p>
-        </div>
-        
-        <div class="categoria">
-            <h3>Llaveros</h3>
-            <p>Pequeños Tesoros para Llevar Contigo</p>
-        </div>
-        
-        <div class="categoria">
-            <h3>Curiosidades</h3>
-            <p>Creaciones que Sorprenden y Encantan</p>
-        </div>
-        
-        <div class="categoria">
-            <h3>Joyeros</h3>
-            <p>Guarda Tu Brillo en una Pieza Única</p>
+        <div class="galeria-links">
+            <a href="#esculturas">Esculturas</a>
+            <a href="#decoraciones">Decoraciones</a>
+            <a href="#collares">Collares</a>
+            <a href="#llaveros">Llaveros</a>
+            <a href="#curiosidades">Curiosidades</a>
+            <a href="#joyeros">Joyeros</a>
         </div>
     </section>
     
     <section id="tienda">
-        <h2>Encuentra la Pieza Perfecta para Ti o un Ser Querido</h2>
+        <h2>Encuentra la Pieza Perfecta</h2>
         <p>Regalos con Historia, Hechos a Mano con Amor</p>
     </section>
     
     <section id="contacto">
-        <h2>¿Tienes una Idea? ¡Hagámosla Realidad!</h2>
-        <p>Contáctanos y Lleva el Arte a Tu Hogar</p>
+        <h2>Contáctanos</h2>
+        <p>¿Tienes una Idea? ¡Hagámosla Realidad!</p>
+        <p>📞 Llámanos o escríbenos</p>
     </section>
-    
-    <footer>
-        <p>&copy; 2025 Arte en Porcelana - Todos los derechos reservados.</p>
-    </footer>
 </body>
 </html>
+
 
