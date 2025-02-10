@@ -6,3 +6,4 @@ document.querySelectorAll('nav ul li a').forEach(enlace => {
         seccion.scrollIntoView({ behavior: 'smooth' });
     });
 });
+console.log("Arte en Porcelana cargado correctamente.");
