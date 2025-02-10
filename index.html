@@ -4,76 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arte en Porcelana</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #FAF8E6;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            background-color: #8B4513;
-            color: white;
-            padding: 15px 0;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .subheader {
-            background-color: #A0522D;
-            color: white;
-            padding: 10px 0;
-            font-size: 18px;
-        }
-        .gallery {
-            margin: 20px auto;
-        }
-        .gallery h2 {
-            font-size: 22px;
-            margin-bottom: 10px;
-        }
-        .buttons-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
-        .button {
-            background-color: #E57373;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            color: white;
-        }
-        footer {
-            background-color: #5D4037;
-            color: white;
-            padding: 10px;
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>Arte en Porcelana</header>
-    <div class="subheader">Descubre creaciones únicas hechas a mano</div>
-    
-    <div class="gallery">
-        <h2>Galería</h2>
-        <div class="buttons-container">
-            <button class="button">Esculturas</button>
-            <button class="button">Decoraciones</button>
-            <button class="button">Collares</button>
-            <button class="button">Llaveros</button>
-            <button class="button">Curiosidades</button>
-            <button class="button">Joyeros</button>
-        </div>
-    </div>
-    
+
+    <!-- Encabezado principal -->
+    <header class="header">
+        <h1>Bienvenido a Arte en Porcelana</h1>
+        <p>Descubre creaciones únicas hechas a mano</p>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="productos">
+            <div class="producto">
+                <h2>Florero de Porcelana</h2>
+                <p>Hermoso florero hecho a mano</p>
+            </div>
+            <div class="producto">
+                <h2>Escultura de Ángel</h2>
+                <p>Escultura detallada en porcelana</p>
+            </div>
+        </section>
+
+        <section class="galeria">
+            <h2>Galería</h2>
+            <div class="categorias">
+                <button>Esculturas</button>
+                <button>Decoraciones</button>
+                <button>Collares</button>
+                <button>Llaveros</button>
+                <button>Curiosidades</button>
+                <button>Joyeros</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
     <footer>
-        &copy; 2025 Arte en Porcelana - Todos los derechos reservados
+        <p>© 2025 Arte en Porcelana - Todos los derechos reservados</p>
     </footer>
+
 </body>
 </html>
 
