@@ -1,68 +1,24 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
+.galeria {
     text-align: center;
-    margin: 0;
-    padding: 0;
-    background-color: #F5F5DC;
-    color: #5A3E36;
+    padding: 20px;
 }
 
-/* Barra de navegación */
-nav ul {
-    list-style: none;
-    padding: 0;
-    background-color: #A0522D;
-    margin: 0;
+.categorias {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-}
-nav ul li {
-    margin: 0 15px;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 15px;
-    display: inline-block;
-}
-nav ul li a:hover {
-    background-color: #CC7722;
+    gap: 20px;
 }
 
-/* Secciones */
-section {
-    padding: 50px 20px;
-    margin: 20px 0;
-}
-
-/* Galería */
-.imagenes img {
-    width: 200px;
-    margin: 10px;
+.categoria {
+    background-color: #E2725B; /* Color terracota */
+    padding: 10px;
     border-radius: 10px;
+    width: 200px;
+    text-align: center;
 }
 
-/* Formulario de contacto */
-form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin: 0 auto;
-}
-form input, form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #5A3E36;
-}
-form button {
-    background-color: #A0522D;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-form button:hover {
-    background-color: #CC7722;
+.categoria img {
+    width: 100%;
+    border-radius: 10px;
 }
