@@ -12,11 +12,11 @@
     <header>
         <nav class="navbar">
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#tienda">Tienda</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -24,127 +24,46 @@
     <section id="inicio">
         <h1>Creaciones Únicas en Cerámica Fría</h1>
         <p>Dale Vida a Tus Espacios con Arte Hecho a Mano</p>
-        
-        <!-- Carrusel de imágenes -->
-        <div class="carousel-container">
-            <h2>Algunas de nuestras artesanías</h2>
-            <div class="carousel">
-                <div class="carousel-slide">
-                    <img src="images/artesania1.jpg" alt="Artesanía 1">
-                    <img src="images/artesania2.jpg" alt="Artesanía 2">
-                    <img src="images/artesania3.jpg" alt="Artesanía 3">
-                </div>
-            </div>
-            <button id="prevBtn">&#10094;</button>
-            <button id="nextBtn">&#10095;</button>
-        </div>
-    </section>
-    
-    <section id="sobre-nosotros">
-        <h2>Pasión por el Arte, Amor por los Detalles</h2>
-        <p>Cada Pieza Cuenta una Historia</p>
     </section>
     
     <section id="galeria">
-        <h2>Explora Nuestra Colección de Artesanías</h2>
+        <h2>Nuestra Galería</h2>
+        <div class="categorias">
+            <button class="categoria" onclick="mostrarCategoria('esculturas')">Esculturas</button>
+            <button class="categoria" onclick="mostrarCategoria('decoraciones')">Decoraciones</button>
+            <button class="categoria" onclick="mostrarCategoria('collares')">Collares</button>
+            <button class="categoria" onclick="mostrarCategoria('llaveros')">Llaveros</button>
+            <button class="categoria" onclick="mostrarCategoria('curiosidades')">Curiosidades</button>
+            <button class="categoria" onclick="mostrarCategoria('joyeros')">Joyeros</button>
+        </div>
+        <div id="contenedor-imagenes">
+            <img id="imagen-mostrada" src="images/esculturas1.jpg" alt="Imagen de galería">
+            <div class="controles">
+                <button onclick="cambiarImagen(-1)">⬅</button>
+                <button onclick="cambiarImagen(1)">➡</button>
+            </div>
+        </div>
     </section>
     
     <section id="tienda">
-        <h2>Encuentra la Pieza Perfecta</h2>
+        <h2>Compra Artesanías Únicas</h2>
+        <p>Descubre piezas hechas a mano con amor y dedicación. ¡Adquiere una obra de arte para tu hogar hoy mismo!</p>
+        <div class="productos">
+            <div class="producto">
+                <img src="images/producto1.jpg" alt="Figura decorativa">
+                <p>Figura decorativa - $20</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="images/producto2.jpg" alt="Jarrón artesanal">
+                <p>Jarrón artesanal - $25</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+        </div>
     </section>
     
     <section id="contacto">
         <h2>Contáctanos</h2>
-    </section>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arte en Porcelana</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Galería</a></li>
-                <li><a href="#">Tienda</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>Creaciones Únicas en Cerámica Fría</h1>
-        <p>Dale Vida a Tus Espacios con Arte Hecho a Mano</p>
-
-        <section class="carousel-container">
-            <h2>Algunas de nuestras artesanías</h2>
-            <div class="carousel">
-                <button class="prev">&lt;</button>
-                <div class="carousel-images">
-                    <img src="img/artesania1.jpg" alt="Artesanía 1">
-                    <img src="img/artesania2.jpg" alt="Artesanía 2">
-                    <img src="img/artesania3.jpg" alt="Artesanía 3">
-                </div>
-                <button class="next">&gt;</button>
-            </div>
-        </section>
-    </main>
-
-    <script src="scripts.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arte en Porcelana</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#tienda">Tienda</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="inicio">
-        <h1>Creaciones Únicas en Cerámica Fría</h1>
-        <p>Dale Vida a Tus Espacios con Arte Hecho a Mano</p>
-    </section>
-    
-    <section id="galeria">
-        <h2>Galería</h2>
-        <p>Aquí puedes ver algunas de nuestras mejores creaciones.</p>
-        <div class="imagenes-galeria">
-            <img src="imagen1.jpg" alt="Artesanía 1">
-            <img src="imagen2.jpg" alt="Artesanía 2">
-            <img src="imagen3.jpg" alt="Artesanía 3">
-        </div>
-        <p>Para más información, contáctanos: <a href="mailto:jordan2007pt@gmail.com">jordan2007pt@gmail.com</a></p>
-    </section>
-    
-    <section id="tienda">
-        <h2>Tienda</h2>
-        <p>Descubre nuestras piezas únicas y lleva el arte a tu hogar. ¡Compra ahora y apoya el arte artesanal!</p>
-    </section>
-    
-    <section id="contacto">
-        <h2>Contacto</h2>
         <p>Si tienes alguna consulta, escríbenos: <a href="mailto:jordan2007pt@gmail.com">jordan2007pt@gmail.com</a></p>
     </section>
     
@@ -153,76 +72,5 @@
     </footer>
 </body>
 </html>
-<section id="galeria">
-    <h2>Nuestra Galería</h2>
-    <div class="categorias">
-        <button class="categoria" onclick="mostrarCategoria('esculturas')">Esculturas</button>
-        <button class="categoria" onclick="mostrarCategoria('decoraciones')">Decoraciones</button>
-        <button class="categoria" onclick="mostrarCategoria('collares')">Collares</button>
-        <button class="categoria" onclick="mostrarCategoria('llaveros')">Llaveros</button>
-        <button class="categoria" onclick="mostrarCategoria('curiosidades')">Curiosidades</button>
-        <button class="categoria" onclick="mostrarCategoria('joyeros')">Joyeros</button>
-    </div>
-
-    <div id="contenedor-imagenes">
-        <img id="imagen-mostrada" src="img/esculturas1.jpg" alt="Imagen de galería">
-        <div class="controles">
-            <button onclick="cambiarImagen(-1)">⬅</button>
-            <button onclick="cambiarImagen(1)">➡</button>
-        </div>
-    </div>
-</section>
-<h2 style="text-align: center; margin-top: 20px;">Compra Artesanías Únicas</h2>
-<p style="text-align: center; font-size: 18px;">
-   Descubre piezas hechas a mano con amor y dedicación. ¡Adquiere una obra de arte para tu hogar hoy mismo!
-</p>
-
-<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
-    <div style="border: 1px solid #ccc; padding: 15px; text-align: center; width: 200px; background-color: #f9f9f9;">
-        <img src="imagenes/producto1.jpg" alt="Producto 1" style="width: 100%; border-radius: 10px;">
-        <p>Figura decorativa - $20</p>
-        <button style="background-color: brown; color: white; padding: 8px; border: none; cursor: pointer;">Comprar</button>
-    </div>
-
-    <div style="border: 1px solid #ccc; padding: 15px; text-align: center; width: 200px; background-color: #f9f9f9;">
-        <img src="imagenes/producto2.jpg" alt="Producto 2" style="width: 100%; border-radius: 10px;">
-        <p>Jarrón artesanal - $25</p>
-        <button style="background-color: brown; color: white; padding: 8px; border: none; cursor: pointer;">Comprar</button>
-    </div>
-</div>
-<h2 style="text-align: center; margin-top: 20px;">Compra Artesanías Únicas</h2>
-<p style="text-align: center; font-size: 18px;">
-   Descubre piezas hechas a mano con amor y dedicación. ¡Adquiere una obra de arte para tu hogar hoy mismo!
-</p>
-
-<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
-    <div style="border: 1px solid #ccc; padding: 15px; text-align: center; width: 200px; background-color: #f9f9f9;">
-        <img src="imagenes/producto1.jpg" alt="Producto 1" style="width: 100%; border-radius: 10px;">
-        <p>Figura decorativa - $20</p>
-        <button style="background-color: brown; color: white; padding: 8px; border: none; cursor: pointer;">Comprar</button>
-    </div>
-
-    <div style="border: 1px solid #ccc; padding: 15px; text-align: center; width: 200px; background-color: #f9f9f9;">
-        <img src="imagenes/producto2.jpg" alt="Producto 2" style="width: 100%; border-radius: 10px;">
-        <p>Jarrón artesanal - $25</p>
-        <button style="background-color: brown; color: white; padding: 8px; border: none; cursor: pointer;">Comprar</button>
-    </div>
-</div>
-<h2 style="text-align: center;">Nuestra Galería</h2>
-
-<div style="text-align: center; margin-bottom: 20px;">
-    <button>Esculturas</button>
-    <button>Decoraciones</button>
-    <button>Collares</button>
-    <button>Llaveros</button>
-    <button>Curiosidades</button>
-    <button>Joyeros</button>
-</div>
-
-<p style="text-align: center;">Para más información, contáctanos en: <strong>tu-correo@example.com</strong></p>
-
-<h2 style="text-align: center;">Contáctanos</h2>
-<p style="text-align: center;">Si tienes preguntas o deseas hacer un pedido, escríbenos a:</p>
-<p style="text-align: center; font-size: 18px; font-weight: bold;">tu-correo@example.com</p>
 
 
