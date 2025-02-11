@@ -62,4 +62,25 @@ document.addEventListener("DOMContentLoaded", function () {
         updateCarousel();
     }, 3000); // Cambia de imagen cada 3 segundos automáticamente
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".carousel-images img");
+    let index = 0;
+
+    function showImage(i) {
+        images.forEach(img => img.style.display = "none");
+        images[i].style.display = "block";
+    }
+
+    document.querySelector(".prev").addEventListener("click", function () {
+        index = (index - 1 + images.length) % images.length;
+        showImage(index);
+    });
+
+    document.querySelector(".next").addEventListener("click", function () {
+        index = (index + 1) % images.length;
+        showImage(index);
+    });
+
+    showImage(index);
+});
 

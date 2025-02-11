@@ -189,4 +189,77 @@ button {
 button:hover {
     background: rgba(0, 0, 0, 0.8);
 }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF8DC;
+    text-align: center;
+}
+
+header {
+    background-color: #8B4513;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+h1 {
+    color: #5D4037;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.carousel-container {
+    background-color: #FCE4D6;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel-images {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+button.prev, button.next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
