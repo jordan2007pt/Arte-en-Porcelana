@@ -34,4 +34,32 @@ setInterval(() => {
     index = (index + 1) % totalImages;
     updateCarousel();
 }, 3000);
+document.addEventListener("DOMContentLoaded", function () {
+    const carouselSlide = document.querySelector(".carousel-slide");
+    const images = document.querySelectorAll(".carousel-slide img");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+    
+    let index = 0;
+    const imageWidth = images[0].clientWidth;
+    
+    function updateCarousel() {
+        carouselSlide.style.transform = `translateX(${-index * imageWidth}px)`;
+    }
+    
+    nextBtn.addEventListener("click", function () {
+        index = (index + 1) % images.length;
+        updateCarousel();
+    });
+    
+    prevBtn.addEventListener("click", function () {
+        index = (index - 1 + images.length) % images.length;
+        updateCarousel();
+    });
+    
+    setInterval(() => {
+        index = (index + 1) % images.length;
+        updateCarousel();
+    }, 3000); // Cambia de imagen cada 3 segundos automáticamente
+});
 
