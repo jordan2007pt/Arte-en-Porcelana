@@ -83,4 +83,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
     showImage(index);
 });
+let imagenes = {
+    esculturas: ["img/esculturas1.jpg", "img/esculturas2.jpg"],
+    decoraciones: ["img/decoraciones1.jpg", "img/decoraciones2.jpg"],
+    collares: ["img/collares1.jpg", "img/collares2.jpg"],
+    llaveros: ["img/llaveros1.jpg", "img/llaveros2.jpg"],
+    curiosidades: ["img/curiosidades1.jpg", "img/curiosidades2.jpg"],
+    joyeros: ["img/joyeros1.jpg", "img/joyeros2.jpg"]
+};
+
+let categoriaActual = "esculturas";
+let indiceImagen = 0;
+
+function mostrarCategoria(categoria) {
+    categoriaActual = categoria;
+    indiceImagen = 0;
+    document.getElementById("imagen-mostrada").src = imagenes[categoria][indiceImagen];
+}
+
+function cambiarImagen(direccion) {
+    indiceImagen += direccion;
+    if (indiceImagen < 0) indiceImagen = imagenes[categoriaActual].length - 1;
+    if (indiceImagen >= imagenes[categoriaActual].length) indiceImagen = 0;
+    document.getElementById("imagen-mostrada").src = imagenes[categoriaActual][indiceImagen];
+}
 
