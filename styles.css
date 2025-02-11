@@ -48,4 +48,55 @@ footer {
     border-radius: 5px;
     cursor: pointer;
 }
+.carousel-container {
+    text-align: center;
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
