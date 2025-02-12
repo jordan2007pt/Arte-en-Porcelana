@@ -1,3 +1,56 @@
 <link rel="stylesheet" href="styles.css">
 <script src="script.js"></script>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería | Arte en Porcelana</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="galeria">
+            <h1>🏞️ Galería - Nuestras Creaciones</h1>
+            <p>💡 Descubre nuestras piezas únicas hechas a mano con cerámica fría. Desde esculturas detalladas hasta joyería artesanal, cada creación está hecha con amor y dedicación.</p>
+            
+            <h2>🗂️ Categorías en la Galería</h2>
+            <div class="categorias">
+                <button class="categoria" onclick="mostrarCategoria('esculturas')">🔹 Esculturas</button>
+                <button class="categoria" onclick="mostrarCategoria('decoraciones')">🔹 Decoraciones</button>
+                <button class="categoria" onclick="mostrarCategoria('collares')">🔹 Collares</button>
+                <button class="categoria" onclick="mostrarCategoria('llaveros')">🔹 Llaveros</button>
+                <button class="categoria" onclick="mostrarCategoria('curiosidades')">🔹 Curiosidades</button>
+                <button class="categoria" onclick="mostrarCategoria('joyeros')">🔹 Joyeros</button>
+            </div>
+            
+            <div id="contenedor-imagenes">
+                <img id="imagen-mostrada" src="images/esculturas1.jpg" alt="Imagen de galería">
+                <div class="controles">
+                    <button aria-label="Imagen anterior" onclick="cambiarImagen(-1)">⬅</button>
+                    <button aria-label="Imagen siguiente" onclick="cambiarImagen(1)">➡</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Arte en Porcelana. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
 
