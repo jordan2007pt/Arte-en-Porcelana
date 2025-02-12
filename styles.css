@@ -45,7 +45,7 @@ header {
     transition: color 0.3s;
 }
 
-.navbar a:hover {
+.navbar a:hover, .navbar a:focus {
     color: #FFD700; /* Dorado */
 }
 
@@ -102,7 +102,7 @@ button {
     transition: background 0.3s;
 }
 
-button:hover {
+button:hover, button:focus {
     background: rgba(0, 0, 0, 0.8);
 }
 
@@ -115,26 +115,6 @@ button:hover {
 }
 
 /* Galería */
-.galeria {
-    margin-top: 20px;
-}
-
-.galeria button {
-    background-color: #D2691E; /* Marrón arcilla */
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.galeria button:hover {
-    background-color: #A0522D; /* Marrón más oscuro */
-}
-
-/* Categorías */
 .categorias {
     display: flex;
     justify-content: center;
@@ -152,7 +132,7 @@ button:hover {
     transition: background 0.3s;
 }
 
-.categoria:hover {
+.categoria:hover, .categoria:focus {
     background-color: #8B4513;
 }
 
@@ -181,7 +161,7 @@ button:hover {
     transition: background 0.3s;
 }
 
-.controles button:hover {
+.controles button:hover, .controles button:focus {
     background-color: #8B4513;
 }
 
@@ -192,5 +172,6 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+
 
 

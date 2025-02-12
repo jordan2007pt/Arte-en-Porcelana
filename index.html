@@ -21,56 +21,56 @@
         </nav>
     </header>
     
-    <section id="inicio">
-        <h1>Creaciones Únicas en Cerámica Fría</h1>
-        <p>Dale Vida a Tus Espacios con Arte Hecho a Mano</p>
-    </section>
-    
-    <section id="galeria">
-        <h2>Nuestra Galería</h2>
-        <div class="categorias">
-            <button class="categoria" onclick="mostrarCategoria('esculturas')">Esculturas</button>
-            <button class="categoria" onclick="mostrarCategoria('decoraciones')">Decoraciones</button>
-            <button class="categoria" onclick="mostrarCategoria('collares')">Collares</button>
-            <button class="categoria" onclick="mostrarCategoria('llaveros')">Llaveros</button>
-            <button class="categoria" onclick="mostrarCategoria('curiosidades')">Curiosidades</button>
-            <button class="categoria" onclick="mostrarCategoria('joyeros')">Joyeros</button>
-        </div>
-        <div id="contenedor-imagenes">
-            <img id="imagen-mostrada" src="images/esculturas1.jpg" alt="Imagen de galería">
-            <div class="controles">
-                <button onclick="cambiarImagen(-1)">⬅</button>
-                <button onclick="cambiarImagen(1)">➡</button>
+    <main>
+        <section id="inicio">
+            <h1>Creaciones Únicas en Cerámica Fría</h1>
+            <p>Dale Vida a Tus Espacios con Arte Hecho a Mano</p>
+        </section>
+
+        <section id="galeria">
+            <h2>Nuestra Galería</h2>
+            <div class="categorias">
+                <button class="categoria" onclick="mostrarCategoria('esculturas')">Esculturas</button>
+                <button class="categoria" onclick="mostrarCategoria('decoraciones')">Decoraciones</button>
+                <button class="categoria" onclick="mostrarCategoria('collares')">Collares</button>
+                <button class="categoria" onclick="mostrarCategoria('llaveros')">Llaveros</button>
+                <button class="categoria" onclick="mostrarCategoria('curiosidades')">Curiosidades</button>
+                <button class="categoria" onclick="mostrarCategoria('joyeros')">Joyeros</button>
             </div>
-        </div>
-    </section>
-    
-    <section id="tienda">
-        <h2>Compra Artesanías Únicas</h2>
-        <p>Descubre piezas hechas a mano con amor y dedicación. ¡Adquiere una obra de arte para tu hogar hoy mismo!</p>
-        <div class="productos">
-            <div class="producto">
-                <img src="images/producto1.jpg" alt="Figura decorativa">
-                <p>Figura decorativa - $20</p>
-                <button class="btn-comprar">Comprar</button>
+            <div id="contenedor-imagenes">
+                <img id="imagen-mostrada" src="images/esculturas1.jpg" alt="Imagen de galería">
+                <div class="controles">
+                    <button aria-label="Imagen anterior" onclick="cambiarImagen(-1)">⬅</button>
+                    <button aria-label="Imagen siguiente" onclick="cambiarImagen(1)">➡</button>
+                </div>
             </div>
-            <div class="producto">
-                <img src="images/producto2.jpg" alt="Jarrón artesanal">
-                <p>Jarrón artesanal - $25</p>
-                <button class="btn-comprar">Comprar</button>
+        </section>
+
+        <section id="tienda">
+            <h2>Compra Artesanías Únicas</h2>
+            <p>Descubre piezas hechas a mano con amor y dedicación. ¡Adquiere una obra de arte para tu hogar hoy mismo!</p>
+            <div class="productos">
+                <div class="producto">
+                    <img src="images/producto1.jpg" alt="Figura decorativa">
+                    <p>Figura decorativa - $20</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="images/producto2.jpg" alt="Jarrón artesanal">
+                    <p>Jarrón artesanal - $25</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
             </div>
-        </div>
-    </section>
-    
-    <section id="contacto">
-        <h2>Contáctanos</h2>
-        <p>Si tienes alguna consulta, escríbenos: <a href="mailto:jordan2007pt@gmail.com">jordan2007pt@gmail.com</a></p>
-    </section>
-    
+        </section>
+
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <p>Si tienes alguna consulta, escríbenos: <a href="mailto:jordan2007pt@gmail.com">jordan2007pt@gmail.com</a></p>
+        </section>
+    </main>
+
     <footer>
         <p>&copy; 2025 Arte en Porcelana. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
-
-
