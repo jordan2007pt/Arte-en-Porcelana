@@ -1,41 +1,86 @@
-<link rel="stylesheet" href="styles.css">
-<script src="script.js"></script>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte en Porcelana</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="inicio">
+            <div class="banner">
+                <img src="images/banner.jpg" alt="Arte en Porcelana - Creaciones Únicas">
+                <h1>🎨 Cada pieza cuenta una historia, hecha con amor y dedicación.</h1>
+                <div class="botones">
+                    <button class="boton" onclick="window.location.href='galeria.html'">Explorar Galería</button>
+                    <button class="boton" onclick="window.location.href='tienda.html'">Comprar Ahora</button>
+                </div>
+            </div>
+        </section>
 
-<nav class="navbar">
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-        <li><a href="galeria.html">Galería</a></li>
-        <li><a href="tienda.html">Tienda</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-</nav>
+        <section id="destacados">
+            <h2>🛍️ Destacados</h2>
+            <div class="productos">
+                <div class="producto">
+                    <img src="images/producto1.jpg" alt="Figura personalizada">
+                    <p>Figura personalizada</p>
+                </div>
+                <div class="producto">
+                    <img src="images/producto2.jpg" alt="Miniatura especial">
+                    <p>Miniatura especial</p>
+                </div>
+                <div class="producto">
+                    <img src="images/producto3.jpg" alt="Joyero artesanal">
+                    <p>Joyero artesanal</p>
+                </div>
+            </div>
+        </section>
 
-<section id="tienda">
-    <h1>🎁 Tienda - Lleva el Arte a Tu Hogar</h1>
-    <p>💡 Encuentra piezas únicas hechas a mano con cerámica fría. Personaliza tu pedido y dale un toque especial a tu colección.</p>
+        <section id="porque-elegirnos">
+            <h2>🌟 ¿Por Qué Elegirnos?</h2>
+            <ul class="ventajas">
+                <li>✔ Hecho a mano con amor y detalle.</li>
+                <li>✔ Diseños únicos y personalizables.</li>
+                <li>✔ Materiales de alta calidad y durabilidad.</li>
+                <li>✔ Atención personalizada para cada pedido.</li>
+            </ul>
+        </section>
 
-    <h2>🗂️ Categorías de Productos</h2>
-    <div class="categorias">
-        <button class="categoria boton" onclick="mostrarCategoria('esculturas')">Esculturas</button>
-        <button class="categoria boton" onclick="mostrarCategoria('decoraciones')">Decoraciones</button>
-        <button class="categoria boton" onclick="mostrarCategoria('collares')">Collares & Joyería</button>
-        <button class="categoria boton" onclick="mostrarCategoria('llaveros')">Llaveros</button>
-        <button class="categoria boton" onclick="mostrarCategoria('joyeros')">Joyeros & Alhajeros</button>
-        <button class="categoria boton" onclick="mostrarCategoria('curiosidades')">Curiosidades & Ediciones Especiales</button>
-    </div>
+        <section id="testimonios">
+            <h2>📝 Testimonios de Clientes</h2>
+            <div class="testimonios">
+                <p>💬 "Me encantó mi joyero personalizado, ¡es hermoso!" – Ana G.</p>
+                <p>💬 "Los llaveros son increíbles, perfectos para regalos." – Luis M.</p>
+            </div>
+        </section>
 
-    <h2>💡 Extras para la Tienda</h2>
-    <ul class="extras">
-        <li>✔ Búsqueda y filtros: Encuentra fácilmente lo que buscas.</li>
-        <li>✔ Sección de destacados: Productos más vendidos o recomendados.</li>
-        <li>✔ Ofertas y promociones: Descuentos por temporada o por compras en combo.</li>
-        <li>✔ Pedidos personalizados: Formulario para que los clientes pidan algo único.</li>
-        <li>✔ Valoraciones y comentarios: Opiniones de clientes sobre los productos.</li>
-        <li>✔ Métodos de pago y envío: Explicación clara sobre opciones de pago y entrega.</li>
-    </ul>
-</section>
-
+        <section id="contacto">
+            <h2>📩 Conéctate con Nosotros</h2>
+            <p>🔹 <a href="contacto.html">¡Crea tu pedido personalizado hoy!</a></p>
+            <p>🔹 Síguenos en redes sociales para más arte y promociones:
+                <a href="https://instagram.com" target="_blank">Instagram</a>,
+                <a href="https://facebook.com" target="_blank">Facebook</a>,
+                <a href="https://tiktok.com" target="_blank">TikTok</a>
+            </p>
+        </section>
+    </main>
+</body>
+</html>
 
 
 
