@@ -1,8 +1,8 @@
 /* Estilos generales */
 body {
     font-family: 'Montserrat', Arial, sans-serif;
-    background-color: #FAE3C6; /* Color tierra claro */
-    color: #5D4037; /* Marrón oscuro */
+    background-color: #FAE3C6;
+    color: #5D4037;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #8B4513; /* Marrón madera */
+    background-color: #8B4513;
     color: white;
     padding: 20px;
 }
@@ -21,7 +21,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #A0522D; /* Marrón rojizo */
+    background: #A0522D;
     padding: 10px 0;
     text-align: center;
     z-index: 1000;
@@ -31,10 +31,11 @@ header {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar li {
-    display: inline;
     margin: 0 15px;
 }
 
@@ -46,7 +47,7 @@ header {
 }
 
 .navbar a:hover, .navbar a:focus {
-    color: #FFD700; /* Dorado */
+    color: #FFD700;
 }
 
 /* Secciones */
@@ -56,84 +57,32 @@ section {
     text-align: center;
 }
 
-/* Carrusel */
-.carousel-container {
-    text-align: center;
-    position: relative;
-    width: 80%;
-    margin: auto;
-    background: #F5DEB3; /* Beige cálido */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.carousel {
-    overflow: hidden;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    position: relative;
-    border-radius: 10px;
-}
-
-.carousel-images {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* Botones de navegación en el carrusel */
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 24px;
-    border-radius: 50%;
-    transition: background 0.3s;
-}
-
-button:hover, button:focus {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
 /* Galería */
 .categorias {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     margin-bottom: 20px;
 }
 
 .categoria {
-    background-color: #B8860B; /* Dorado oscuro */
+    background-color: #B8860B;
     color: white;
-    padding: 10px;
     border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .categoria:hover, .categoria:focus {
     background-color: #8B4513;
+    transform: scale(1.05);
 }
 
 /* Contenedor de imágenes */
@@ -141,80 +90,52 @@ button:hover, button:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
 }
 
 #imagen-mostrada {
     width: 300px;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Controles de navegación en las imágenes */
-.controles button {
-    background-color: #D2691E; /* Arcilla */
-    color: white;
-    padding: 5px 10px;
-    margin: 5px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.controles button:hover, .controles button:focus {
-    background-color: #8B4513;
-}
-
-/* Pie de página */
-footer {
-    background-color: #5D4037; /* Marrón oscuro */
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
-}
-.categorias {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.categoria {
-    background-color: #a36a2c;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s;
-}
-
-.categoria:hover {
-    background-color: #814d1e;
-}
-
+/* Controles de navegación */
 .controles {
     display: flex;
     justify-content: center;
+    gap: 10px;
     margin-top: 10px;
 }
 
 .controles button {
     background-color: #814d1e;
     border: none;
-    padding: 10px;
-    margin: 5px;
+    padding: 12px;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     color: white;
+    transition: background 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .controles button:hover {
     background-color: #5c3311;
+    transform: scale(1.1);
 }
+
+/* Pie de página */
+footer {
+    background-color: #5D4037;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
 
 
 
