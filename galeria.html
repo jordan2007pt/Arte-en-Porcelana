@@ -53,4 +53,20 @@
     </footer>
 </body>
 </html>
+<div class="categorias">
+    <button class="categoria" onclick="mostrarCategoria('esculturas')">Esculturas</button>
+    <button class="categoria" onclick="mostrarCategoria('decoraciones')">Decoraciones</button>
+    <button class="categoria" onclick="mostrarCategoria('collares')">Collares</button>
+    <button class="categoria" onclick="mostrarCategoria('llaveros')">Llaveros</button>
+    <button class="categoria" onclick="mostrarCategoria('curiosidades')">Curiosidades</button>
+    <button class="categoria" onclick="mostrarCategoria('joyeros')">Joyeros</button>
+</div>
+
+<div id="contenedor-imagenes">
+    <img id="imagen-mostrada" src="images/esculturas1.jpg" alt="Imagen de galería">
+    <div class="controles">
+        <button aria-label="Imagen anterior" onclick="cambiarImagen(-1)">⬅</button>
+        <button aria-label="Imagen siguiente" onclick="cambiarImagen(1)">➡</button>
+    </div>
+</div>
 

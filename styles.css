@@ -172,6 +172,49 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.categoria {
+    background-color: #a36a2c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.categoria:hover {
+    background-color: #814d1e;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.controles button {
+    background-color: #814d1e;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+}
+
+.controles button:hover {
+    background-color: #5c3311;
+}
 
 
 

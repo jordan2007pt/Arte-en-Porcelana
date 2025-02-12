@@ -44,6 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
     window.mostrarCategoria = mostrarCategoria;
     window.cambiarImagen = cambiarImagen;
 });
+function mostrarCategoria(categoria) {
+    document.getElementById("imagen-mostrada").src = `images/${categoria}1.jpg`;
+}
 
 
 
